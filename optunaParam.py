@@ -46,5 +46,5 @@ for output_column in output_columns:
     print(f"Best hyperparameters for {output_column}: {study.best_params}")
     print(f"Best MSE for {output_column}: {study.best_value}")
 
-    with open(f"_optunaShitOutput_{output_column}.json", "w") as f:
+    with open(f"_optunaParamOutput_{output_column}.json", "w") as f:
         json.dump(study.best_params, f, indent=4)
